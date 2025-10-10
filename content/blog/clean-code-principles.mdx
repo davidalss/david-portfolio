@@ -1,0 +1,74 @@
+---
+title: "Clean Code Principles I Live By"
+date: "2024-03-10"
+excerpt: "Essential clean code practices that have improved my development workflow and code maintainability."
+tags: ["clean-code", "best-practices", "software-engineering"]
+---
+
+# Clean Code Principles I Live By
+
+Writing clean, maintainable code is a skill that develops over time. Here are the principles that guide my development work.
+
+## 1. Meaningful Names
+
+Variables, functions, and classes should clearly communicate their purpose:
+
+\`\`\`javascript
+// Bad
+const d = new Date();
+const x = calculateTotal(items);
+
+// Good
+const currentDate = new Date();
+const orderTotal = calculateTotal(items);
+\`\`\`
+
+## 2. Functions Should Do One Thing
+
+Keep functions focused and single-purpose:
+
+\`\`\`javascript
+// Bad
+function processUserAndSendEmail(user) {
+  validateUser(user);
+  saveToDatabase(user);
+  sendWelcomeEmail(user);
+}
+
+// Good
+function processUser(user) {
+  validateUser(user);
+  saveToDatabase(user);
+}
+
+function sendWelcomeEmail(user) {
+  // Email logic here
+}
+\`\`\`
+
+## 3. DRY (Don't Repeat Yourself)
+
+Avoid code duplication by extracting common logic into reusable functions.
+
+## 4. Comments Explain Why, Not What
+
+Code should be self-explanatory. Comments should explain the reasoning behind decisions:
+
+\`\`\`javascript
+// Bad
+// Increment counter
+counter++;
+
+// Good
+// Skip the first item as it's a header row
+counter++;
+\`\`\`
+
+## 5. Error Handling
+
+Always handle errors gracefully and provide meaningful error messages.
+
+## Conclusion
+
+Clean code is about respect - for your future self and for other developers who will work with your code. These principles have made my code more maintainable and easier to debug.
+\`\`\`
