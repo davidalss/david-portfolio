@@ -13,7 +13,7 @@ Writing clean, maintainable code is a skill that develops over time. Here are th
 
 Variables, functions, and classes should clearly communicate their purpose:
 
-\`\`\`javascript
+```javascript
 // Bad
 const d = new Date();
 const x = calculateTotal(items);
@@ -21,13 +21,13 @@ const x = calculateTotal(items);
 // Good
 const currentDate = new Date();
 const orderTotal = calculateTotal(items);
-\`\`\`
+```
 
 ## 2. Functions Should Do One Thing
 
 Keep functions focused and single-purpose:
 
-\`\`\`javascript
+```javascript
 // Bad
 function processUserAndSendEmail(user) {
   validateUser(user);
@@ -44,7 +44,7 @@ function processUser(user) {
 function sendWelcomeEmail(user) {
   // Email logic here
 }
-\`\`\`
+```
 
 ## 3. DRY (Don't Repeat Yourself)
 
@@ -54,7 +54,7 @@ Avoid code duplication by extracting common logic into reusable functions.
 
 Code should be self-explanatory. Comments should explain the reasoning behind decisions:
 
-\`\`\`javascript
+```javascript
 // Bad
 // Increment counter
 counter++;
@@ -62,7 +62,7 @@ counter++;
 // Good
 // Skip the first item as it's a header row
 counter++;
-\`\`\`
+```
 
 ## 5. Error Handling
 
@@ -71,4 +71,3 @@ Always handle errors gracefully and provide meaningful error messages.
 ## Conclusion
 
 Clean code is about respect - for your future self and for other developers who will work with your code. These principles have made my code more maintainable and easier to debug.
-\`\`\`

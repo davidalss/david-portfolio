@@ -15,7 +15,7 @@ const nextConfig = {
   },
   // Disable development overlays
   experimental: {
-    optimizeCss: true,
+    optimizeCss: false,
   },
 }
 
