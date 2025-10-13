@@ -1,153 +1,112 @@
 # David Alisson - Portfolio
 
-Portfólio pessoal desenvolvido com Next.js 15, TypeScript e Tailwind CSS, apresentando minha experiência como Full-Stack Developer e Analista de Qualidade.
+Portfolio profissional de David Alisson Sarapião Pedro, Analista de TI & Desenvolvedor Full-Stack.
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Deploy no Vercel
 
-- **Next.js 15** - Framework React para produção
-- **TypeScript** - Tipagem estática para JavaScript
-- **Tailwind CSS** - Framework CSS utilitário
-- **Framer Motion** - Biblioteca de animações
-- **Radix UI** - Componentes acessíveis
-- **MDX** - Markdown com componentes React
-- **Three.js** - Gráficos 3D e animações
+### Método 1: Deploy Automático via GitHub
 
-## 📁 Estrutura do Projeto
+1. **Conecte seu repositório ao Vercel:**
+   - Acesse [vercel.com](https://vercel.com)
+   - Faça login com sua conta GitHub
+   - Clique em "New Project"
+   - Importe este repositório
 
-```
-david-portfolio/
-├── app/                    # App Router do Next.js
-│   ├── about/             # Página sobre
-│   ├── blog/              # Blog e posts
-│   ├── contact/           # Página de contato
-│   ├── projects/          # Portfólio de projetos
-│   └── api/               # API routes
-├── components/            # Componentes React
-│   ├── ui/               # Componentes de UI base
-│   └── ...               # Componentes específicos
-├── content/              # Conteúdo MDX do blog
-├── hooks/                # Custom hooks
-├── lib/                  # Utilitários e configurações
-└── public/               # Arquivos estáticos
-```
+2. **Configure o projeto:**
+   - Framework: Next.js (detectado automaticamente)
+   - Build Command: `npm run build`
+   - Output Directory: `.next`
+   - Install Command: `npm install`
 
-## 🎨 Características
+3. **Deploy:**
+   - Clique em "Deploy"
+   - Aguarde o build completar
+   - Seu site estará disponível em `https://seu-projeto.vercel.app`
 
-- **Design Responsivo** - Otimizado para todos os dispositivos
-- **Tema Escuro/Claro** - Suporte a múltiplos temas
-- **Animações Suaves** - Transições e micro-interações
-- **SEO Otimizado** - Meta tags e estrutura semântica
-- **Performance** - Carregamento rápido e otimizado
-- **Acessibilidade** - Componentes acessíveis e navegação por teclado
+### Método 2: Deploy via Vercel CLI
 
-## 🛠️ Instalação e Execução
-
-1. **Clone o repositório**
+1. **Instale o Vercel CLI:**
    ```bash
-   git clone https://github.com/davidalss/david-portfolio.git
+   npm i -g vercel
+   ```
+
+2. **Faça login:**
+   ```bash
+   vercel login
+   ```
+
+3. **Deploy:**
+   ```bash
+   vercel
+   ```
+
+4. **Para produção:**
+   ```bash
+   vercel --prod
+   ```
+
+## 🛠️ Desenvolvimento Local
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/david-portfolio.git
    cd david-portfolio
    ```
 
-2. **Instale as dependências**
+2. **Instale as dependências:**
    ```bash
    npm install
    ```
 
-3. **Execute o projeto em desenvolvimento**
+3. **Execute em modo desenvolvimento:**
    ```bash
    npm run dev
    ```
 
-4. **Acesse no navegador**
-   ```
-   http://localhost:3000
-   ```
+4. **Acesse:** `http://localhost:3000`
 
-## 📝 Scripts Disponíveis
+## 📦 Scripts Disponíveis
 
-- `npm run dev` - Executa o servidor de desenvolvimento
-- `npm run build` - Gera a versão de produção
-- `npm run start` - Executa a versão de produção
-- `npm run lint` - Executa o linter
+- `npm run dev` - Executa em modo desenvolvimento
+- `npm run build` - Cria build de produção
+- `npm run start` - Executa build de produção
+- `npm run lint` - Executa linter
 
-## 🎯 Funcionalidades
+## 🎨 Tecnologias Utilizadas
 
-### Página Inicial
-- Hero section com animações 3D
-- Navegação suave entre seções
-- Apresentação de habilidades e experiência
+- **Next.js 15** - Framework React
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Estilização
+- **Framer Motion** - Animações
+- **Radix UI** - Componentes acessíveis
+- **Lucide React** - Ícones
 
-### Sobre
-- História profissional detalhada
-- Habilidades técnicas com níveis de proficiência
-- Educação e certificações
+## 📱 Recursos
 
-### Projetos
-- Grid de projetos com filtros
-- Integração com GitHub API
-- Detalhes técnicos e links
+- ✅ Design responsivo
+- ✅ Animações suaves
+- ✅ Navegação por seções
+- ✅ Formulário de contato
+- ✅ Blog com MDX
+- ✅ SEO otimizado
+- ✅ Performance otimizada
 
-### Blog
-- Posts em MDX
-- Sistema de tags
-- Navegação entre posts
+## 🔧 Configurações do Vercel
 
-### Contato
-- Formulário funcional com validação
-- API route para envio de emails
-- Informações de contato e redes sociais
+O projeto está configurado com:
 
-## 🔧 Configuração
-
-### Variáveis de Ambiente
-Crie um arquivo `.env.local` na raiz do projeto:
-
-```env
-# Email (opcional - para funcionalidade de contato)
-EMAIL_SERVICE_API_KEY=your_api_key_here
-```
-
-### Personalização
-- **Cores**: Edite `tailwind.config.js` para personalizar o tema
-- **Conteúdo**: Atualize os componentes com suas informações
-- **Blog**: Adicione posts em `content/blog/`
-
-## 📱 Responsividade
-
-O portfólio é totalmente responsivo e otimizado para:
-- Desktop (1200px+)
-- Tablet (768px - 1199px)
-- Mobile (320px - 767px)
-
-## 🚀 Deploy
-
-### Vercel (Recomendado)
-1. Conecte seu repositório GitHub à Vercel
-2. Configure as variáveis de ambiente
-3. Deploy automático a cada push
-
-### Outras Plataformas
-- **Netlify**: Compatível com Next.js
-- **Railway**: Deploy simples e rápido
-- **DigitalOcean**: Para controle total
+- **Framework:** Next.js
+- **Node.js:** 18.x
+- **Build Command:** `npm run build`
+- **Output Directory:** `.next`
+- **Install Command:** `npm install`
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 🤝 Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para:
-- Reportar bugs
-- Sugerir melhorias
-- Enviar pull requests
+© 2025 David Alisson. All rights reserved.
 
 ## 📞 Contato
 
-- **Email**: david.alisson92@outlook.com
-- **LinkedIn**: [linkedin.com/in/davidalss](https://linkedin.com/in/davidalss)
-- **GitHub**: [github.com/davidalss](https://github.com/davidalss)
-
----
-
-Desenvolvido com ❤️ por David Alisson Sarapião Pedro
+- **Email:** david.alisson92@outlook.com
+- **GitHub:** [github.com/davidalss](https://github.com/davidalss)
+- **LinkedIn:** [linkedin.com/in/davidalss](https://linkedin.com/in/davidalss)
