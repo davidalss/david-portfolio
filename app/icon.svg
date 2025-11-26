@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Diamante principal preto -->
+  <path d="M50 5 L95 50 L50 95 L5 50 Z" fill="#000000" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Brilho interno -->
+  <path d="M50 20 L75 50 L50 80 L25 50 Z" fill="#0a0a0a" opacity="0.8"/>
+  <!-- Destaque superior -->
+  <path d="M50 15 L60 35 L50 45 L40 35 Z" fill="#ffffff" opacity="0.15"/>
+</svg>
